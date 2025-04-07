@@ -1,5 +1,18 @@
-function greet(name: string): string {
-    return `Hello, ${name}!`;
+interface face{
+    x: number;
+    y: number;
+    z: string
 }
 
-console.log(greet("TypeScript"));
+const test : face = {
+    x : 5,
+    y : 6,
+    z : "hello"
+}
+
+function test1(avarible : face){
+    
+    console.log(avarible.x)
+}
+
+test1(test)
